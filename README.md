@@ -1,1 +1,2 @@
-# portfolio
+# portfolio page / codecademy project
+
