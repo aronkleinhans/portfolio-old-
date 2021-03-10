@@ -82,12 +82,12 @@ header h1{
     width: auto;
     background-color: rgb(41, 41, 41);
     text-align: left;
+    perspective: 40px;
 }
 .item img{
     height: 170px;
     width: 3auto;
 }
-
 .item p{
     padding-left: 10px;
 }
