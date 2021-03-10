@@ -14,7 +14,7 @@ main{
 /* nav bar style */
 nav{
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -47,11 +47,16 @@ nav a{
 
 /* header, text content */
 
+main{
+    background-image: url("images/topBG.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 header h1{
     font-size: 3em;
 }
 .welcome{
-    margin: 200px;
+    padding: 200px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
@@ -101,7 +106,8 @@ header h1{
         font-family: 'Lato', sans-serif;
     }
     .welcome{
-        font-size: medium;
+        padding: 0;
+        font-size: 1em;
         text-align: center;
         margin: 300px 0 650px 0;
     }
@@ -128,6 +134,13 @@ header h1{
     }
 }
 @media only screen and (max-width: 600px){
+    .welcome{
+        font-size: 0.6em;
+        text-align: left;
+    }
+    main{
+        background-position-x: 0;
+    }
     body{
         font-size: 12px;
     }
