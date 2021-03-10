@@ -50,6 +50,7 @@ nav a{
 main{
     background-image: url("./images/topBG.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 header h1{
     font-size: 3em;
