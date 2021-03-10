@@ -33,12 +33,9 @@ nav a{
 .button:hover{
     background-color: rgb(50, 50, 50);
 }
-.logo{
-    width: 30px;
-    height: 30px;
-}
 
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 600px){
     body{
         font-size: 12px;
     }
@@ -47,5 +44,9 @@ nav a{
     }
     .button{
         padding: 0 5px 0 5px;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
     }
 }
