@@ -33,7 +33,16 @@ nav a{
 .button:hover{
     background-color: rgb(50, 50, 50);
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    justify-items: center;
+}
+.item img{
+    height: auto;
+    width: 300px;
+}
 
 @media only screen and (max-width: 800px){
     body{
