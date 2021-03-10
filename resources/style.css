@@ -83,12 +83,12 @@ header h1{
     width: auto;
     background-color: rgb(41, 41, 41);
     text-align: left;
-
 }
 .item img{
     height: auto;
     width: 300px;
 }
+
 .item p{
     padding-left: 10px;
 }
