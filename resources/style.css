@@ -13,7 +13,6 @@ main{
 
 /* nav bar style */
 nav{
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -56,7 +55,7 @@ header h1{
     font-size: 3em;
 }
 .welcome{
-    padding: 200px;
+    padding: 150px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
@@ -85,8 +84,8 @@ header h1{
     text-align: left;
 }
 .item img{
-    height: auto;
-    width: 300px;
+    height: 170px;
+    width: 3auto;
 }
 
 .item p{
@@ -98,6 +97,7 @@ header h1{
 @media only screen and (max-width: 1500px){
     .welcome{
         font-size: 1em;
+        margin-bottom: 800px;
     }
 }
 @media only screen and (max-width: 1000px){
@@ -106,10 +106,10 @@ header h1{
         font-family: 'Lato', sans-serif;
     }
     .welcome{
-        padding: 0;
+        padding: 30px 0 0 0;
+        margin-top: 0;
         font-size: 1em;
         text-align: center;
-        margin: 300px 0 650px 0;
     }
     nav li{ 
         margin: 8px;
@@ -118,8 +118,7 @@ header h1{
         padding: 0 5px 0 5px;
     }
     .logo{
-        width: 30px;
-        height: 30px;
+        margin: 0;
     }
     .item img{
         height: auto;
