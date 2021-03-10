@@ -124,11 +124,11 @@ nav a{
     }
     .item img{
         height: auto;
-        width: 200px;
+        width: 250px;
     }
     .projectsGrid{
         margin: 30px 0 30px 0;
-        grid-template-columns: minmax(100px, 1fr);
+        grid-template-columns: minmax(150px, 1fr);
         grid-template-rows: 200px;
         grid-auto-rows: 200px;
         justify-items: center;
