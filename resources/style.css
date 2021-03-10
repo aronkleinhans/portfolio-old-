@@ -14,7 +14,7 @@ main{
 /* nav bar style */
 nav{
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
 }
@@ -76,10 +76,16 @@ header h1{
 }
 .item{
     width: auto;
+    background-color: rgb(41, 41, 41);
+    text-align: left;
+
 }
 .item img{
     height: auto;
     width: 300px;
+}
+.item p{
+    padding-left: 10px;
 }
 
 /* responsive stuff */
