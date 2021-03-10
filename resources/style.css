@@ -9,10 +9,10 @@ main{
     width: 100%;
     text-align: center;
 }
-main article{
-    margin: 400px;
-    text-align: left;
-}
+
+
+/* nav bar style */
+
 nav ul{
     padding: 0;
     margin: 0;
@@ -39,16 +39,25 @@ nav a{
 .button:hover{
     color: tomato;
 }
+
+/* header, text content */
+
 header h1{
     font-size: 3em;
 }
 .welcome{
+    margin: 200px;
+    margin-bottom: 600px;
+    text-align: left;
     font-size: 2em;
 }
 .colorHighlight{
     color: tomato;
     font-size: 1.5em;
 }
+
+/* projects grid & items */
+
 .projectsGrid{
     display: grid;
     margin: 100px;
@@ -68,6 +77,8 @@ header h1{
     width: 300px;
 }
 
+/* responsive stuff */
+
 @media only screen and (max-width: 1500px){
     .welcome{
         font-size: 1em;
@@ -78,7 +89,7 @@ header h1{
         font-size: 1em;
         font-family: 'Lato', sans-serif;
     }
-    main article{
+    .welcome{
         font-size: medium;
         text-align: center;
         margin: 300px 0 650px 0;
@@ -131,7 +142,6 @@ header h1{
         justify-items: center;
     }
 }
-
 @media only screen and (max-width: 450px){
     body{
         font-size: 12px;
