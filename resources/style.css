@@ -141,6 +141,7 @@ header h1{
         text-align: left;
     }
     main{
+background-image: url("./images/topBG.png");
         background-position-x: 0;
     }
     body{
