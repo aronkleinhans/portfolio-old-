@@ -86,7 +86,6 @@ header h1{
     align-content: center;
 }
 .item{
-    display: hidden;
     width: auto;
     background-color: rgb(41, 41, 41);
     text-align: left;
