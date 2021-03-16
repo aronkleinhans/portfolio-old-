@@ -102,6 +102,17 @@ header h1{
 #thumbnail{
     transition: transform 0.5s;
 }
+.js-slidein {
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.js-slidein-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 /* responsive stuff */
 
 @media only screen and (max-width: 1500px){
