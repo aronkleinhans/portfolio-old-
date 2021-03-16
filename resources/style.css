@@ -5,6 +5,10 @@ body {
     color: whitesmoke;
     background-color: rgb(24, 24, 24);
 }
+.darkmode{
+    color: rgb(24, 24, 24);
+    background-color: whitesmoke;
+}
 main{
     width: 100%;
     text-align: center;
