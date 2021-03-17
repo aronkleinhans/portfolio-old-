@@ -5,13 +5,10 @@ body {
     color: black;
     background-color: whitesmoke;
 }
-
 main{
     width: 100%;
     text-align: center;
 }
-
-
 /* nav bar style */
 nav{
     top: 0;
