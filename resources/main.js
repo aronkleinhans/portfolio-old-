@@ -16,15 +16,9 @@ function switchDarkmode(){
           if(this.checked) {
                document.body.classList.add('dark');
                label.classList.add('checked');
-               for (let i = 0; i < items.length; i++) {
-                    items[i].classList.add('darkitem');
-               }
           } else {
                document.body.classList.remove('dark');
                label.classList.remove('checked');
-               for (let i = 0; i < items.length; i++) {
-                    items[i].classList.remove('darkitem');
-               }
                localStorage.removeItem('dark');
           };
      });
