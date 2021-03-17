@@ -12,7 +12,7 @@
     <title>Aron Kleinhans</title>
 </head>
 <body>
-    <script src="resources/main.js"></script>
+
     <header>
             <nav>
                 <ul>
@@ -20,7 +20,10 @@
                     <li><a href="#projects"><span class="button">Projects</span></a></li>
                     <li><a href="#"><span class="button">About me</span></a></li>
                     <li><a href="#"><span class="button">Contact</span></a></li>
-                    <li><span class="button darkmode">Darkmode</span></li>
+                    <li>
+                        <input type="checkbox" name="darkmodeBox" id="darkmodeBox">
+                        <label for="darkmodeBox" id="darkmode" class="button">Dark Theme</label>
+                    </li>
                    </ul>
             </nav>
         </header>
@@ -64,5 +67,6 @@
                 </div>
             </section>
         </main>
+        <script src="resources/main.js"></script>
 </body>
 </html>

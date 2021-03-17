@@ -2,13 +2,10 @@ body {
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    color: whitesmoke;
-    background-color: rgb(24, 24, 24);
-}
-.darkmode{
-    color: rgb(24, 24, 24);
+    color: black;
     background-color: whitesmoke;
 }
+
 main{
     width: 100%;
     text-align: center;
@@ -35,14 +32,15 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: whitesmoke;
-    font-weight: 700;
-    font-family: 'Vollkorn', serif;
 }
 .button{
     padding: 0 25px 0 25px;
     height: auto;
     width: 70px;
+
+    color: whitesmoke;
+    font-weight: 700;
+    font-family: 'Vollkorn', serif;
 }
 .button:hover{
     color: tomato;
@@ -70,6 +68,7 @@ header h1{
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
+    color: whitesmoke
 }
 .colorHighlight{
     color: tomato;
@@ -103,9 +102,21 @@ header h1{
     padding-left: 10px;
 }
 
-#thumbnail{
-    transition: transform 0.5s;
+/* Darkmode */
+
+.dark{
+    color: whitesmoke;
+    background-color: rgb(24, 24, 24);
 }
+.checked{
+    color: rgb(204, 43, 15);
+    filter: drop-shadow(0 -6mm 4mm rgb(235, 124, 121));
+}
+#darkmodeBox{
+    display: none;
+}
+
+
 /* responsive stuff */
 
 @media only screen and (max-width: 1500px){
