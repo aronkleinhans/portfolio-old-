@@ -119,8 +119,7 @@ header h1{
     background-color: rgb(41, 41, 41);
 }
 .checked{
-    color: crimson;
-    filter: drop-shadow(0 0 0.75rem crimson);
+    filter: drop-shadow(0 0 0.75rem rgb(106, 213, 255));
 }
 #darkmodeBox{
     display: none;
