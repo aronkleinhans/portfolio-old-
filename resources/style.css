@@ -90,6 +90,11 @@ header h1{
 .contact ul{
     padding: 0;
 }
+.aboutBG{
+    background-image: url('./images/aboutBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .colorHighlight{
     color: tomato;
@@ -255,6 +260,7 @@ header h1{
     .contactBG{
         background-image: url('./images/contactBGm.png');
     }
+
     body{
         font-size: 30px;
     }
