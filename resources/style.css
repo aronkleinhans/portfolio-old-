@@ -218,6 +218,9 @@ header h1{
         height: auto;
         width: 300px;
     }
+    .item p{
+        font-size: 15px;
+    }
     .projectsGrid{
         margin: 30px 0 30px 0;
         grid-template-columns: 1fr 1fr;
@@ -249,6 +252,9 @@ header h1{
         background-size: contain;
         background-position-x: 0;
     }
+    .contactBG{
+        background-image: url('./images/contactBGm.png');
+    }
     body{
         font-size: 30px;
     }
@@ -263,6 +269,7 @@ header h1{
         height: auto;
         width: 200px;
     }
+
     .projectsGrid{
         margin: 30px 0 30px 0;
         grid-template-columns: minmax(200px, 1fr) minmax(250px, 1fr);
