@@ -14,7 +14,7 @@ if(localStorage.getItem('a11y')) {
      document.body.classList.add('a11y');
      label.classList.add('checked');
 
-     v8y.src = "./resources/images/baseline_visibility_white_18dp.png";
+     v8y.src = "./resources/images/baseline_visibility_off_white_18dp.png";
 
      for(let item of a11yables){
           item.classList.add('a11y');
@@ -37,7 +37,7 @@ function switchDarkmode(){
                label.classList.add('checked');
                logo.classList.remove('invert');
 
-               v8y.src = "./resources/images/baseline_visibility_white_18dp.png";
+               v8y.src = "./resources/images/baseline_visibility_off_white_18dp.png";
 
                for(let item of a11yables){
                     item.classList.add('a11y');
@@ -54,7 +54,7 @@ function switchDarkmode(){
                localStorage.removeItem('a11y');
                logo.classList.add('invert');
 
-               v8y.src = "./resources/images/baseline_visibility_off_white_18dp.png";
+               v8y.src = "./resources/images/baseline_visibility_white_18dp.png";
 
                for(let item of a11yables){
                     item.classList.remove('a11y');
