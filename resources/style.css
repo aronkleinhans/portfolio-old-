@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-size: 20px;
@@ -23,7 +26,7 @@ nav ul{
     list-style-type: none;
     background-color:hsla(100, 100%, 0%, 1);
 }
-nav li, .contact li{
+nav li, .contact li, .about li{
     display: inline-block;
     margin: 5px 20px 5px 20px;
     text-align: center;
@@ -83,21 +86,29 @@ header h1{
     background-size: cover;
     background-repeat: repeat;
 }
-.contact img{
+.contact img, .about img{
     width: 30px;
     height: auto;
 }
 .contact ul{
     padding: 0;
 }
+.about{
+    color:  rgb(0, 0, 0);
+    padding: 100px;
+    margin-bottom: 600px;
+    text-align: left;
+    font-size: 1em;
+}
 .aboutBG{
-    background-image: url('./images/aboutBG.png');
+    background-image: url('./images/aboutBG.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .colorHighlight{
-    color: tomato;
+    color: rgb(255, 177, 113);
     font-size: 1.5em;
 }
 
@@ -249,7 +260,8 @@ header h1{
         font-size: 12px;
     }
     .welcome{
-        font-size: 0.8em;
+        padding: 30px;
+        font-size: 0.7em;
         text-align: left;
     }
     main{
@@ -283,7 +295,7 @@ header h1{
         grid-auto-rows: 200px;
         justify-items: center;
     }
-    .contact{
+    .contact, .about{
         padding: 30px;
         margin-bottom: 400px;
         margin-top: 100px;
