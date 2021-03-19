@@ -48,6 +48,7 @@ nav a, .contact a{
     color: tomato;
 }
 .logo{
+    margin-left: 15px;
     background-image: url("./images/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
