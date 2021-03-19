@@ -7,6 +7,7 @@
     <meta name="description" content="Designing unique, accessible, responsive, aesthetically pleasing websites.">
     <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="./resources/tooltip.css">
     <link rel="stylesheet" href="./resources/noScroll.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -18,34 +19,36 @@
             <ul>
                 <li id="logo" class="logo" aria-roledescription="site logo"></li>
                 <li>
-                    <div class="darkswitch">
+                    <div class="darkswitch tooltip">
                         <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
-                        <label for="darkmodeBox" id="darkmode" class="button hl">
-                            <img src="./resources/images/baseline_dark_mode_white_18dp.png" alt="">
+                        <label for="darkmodeBox" id="darkmode" class="button">
+                            <img id="vis" src="./resources/images/baseline_visibility_off_white_18dp.png" alt="">
                         </label>
+                        <span class="tooltiptext noSelect">Visuals on/off</span>
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
+                    <div class="dropdown menuTip">
                         <img onclick="myFunction()" class="menuIcon noSelect dropbtn" src="resources/images/baseline_menu_white_18dp.png" alt="">
                         <div id="myDropdown" class="dropdown-content">
                             <a href="./index.html"><span class="button">Projects</span></a>
                             <a href="./about.html"><span class="button">About me</span></a>
                             <a href="./contact.html"><span class="button">Contact</span></a>
                         </div>
+                            <span class="tooltiptext noSelect">Menu</span>
                     </div>
                 </li>
             </ul>
         </nav>
-        <script src="./resources/scripts/darkmode.js"></script>
-        <script src="./resources/scripts/dropdown.js"></script>
     </header>
-    <div class="contact">
+    <div class="contact a11yable">
             <p><span class="colorHighlight">Have an interesting project? Feel free to reach out!</span></p>
             <ul>
-                <li><a href="https://github.com/aronkleinhans" target="blank"><img class="invert" src="./resources/images/langIcons/github.png" alt=""></a></li>
-                <li><a href="mailto:kleinhans.aron@gmail.com" target="blank"><img class="invert" src="./resources/images/langIcons/mail.png" alt=""></a></li>
+                <li><a href="https://github.com/aronkleinhans" target="blank"><img class="icon invert" src="./resources/images/langIcons/github.png" alt=""></a></li>
+                <li><a href="mailto:kleinhans.aron@gmail.com" target="blank"><img class="icon invert" src="./resources/images/langIcons/mail.png" alt=""></a></li>
             </ul>
     </div>
+    <script src="./resources/scripts/darkmode.js"></script>
+    <script src="./resources/scripts/dropdown.js"></script>
 </body>
 </html>

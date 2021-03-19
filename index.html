@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Designing unique, accessible, responsive, aesthetically pleasing websites.">
     <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="./resources/tooltip.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Aron Kleinhans</title>
@@ -17,68 +18,70 @@
                 <ul>
                     <li id="logo" class="logo" aria-roledescription="site logo"></li>
                     <li>
-                        <div class="darkswitch">
+                        <div class="darkswitch tooltip">
                             <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
-                            <label for="darkmodeBox" id="darkmode" class="button hl">
-                                <img src="./resources/images/baseline_dark_mode_white_18dp.png" alt="">
+                            <label for="darkmodeBox" id="darkmode" class="button">
+                                <img id="vis" src="./resources/images/baseline_visibility_off_white_18dp.png" alt="">
                             </label>
+                            <span class="tooltiptext noSelect">Visuals on/off</span>
                         </div>
                     </li>
                     <li>
-                        <div class="dropdown">
+                        <div class="dropdown menuTip">
                             <img onclick="myFunction()" class="menuIcon noSelect dropbtn" src="resources/images/baseline_menu_white_18dp.png" alt="">
                             <div id="myDropdown" class="dropdown-content">
                                 <a href="#projects"><span class="button">Projects</span></a>
                                 <a href="./about.html"><span class="button">About me</span></a>
                                 <a href="./contact.html"><span class="button">Contact</span></a>
                             </div>
+                                <span class="tooltiptext noSelect">Menu</span>
                         </div>
                     </li>
                 </ul>
             </nav>
-            <script src="resources/scripts/darkmode.js"></script>
-            <script src="resources/scripts/dropdown.js"></script>
         </header>
-        <main>
-            <article class="welcome">
+        <main class="a11yable">
+            <article class="welcome a11yable">
                <p class="hello" >Hello, I'm <span class="colorHighlight">Aron Kleinhans</span>.</p>
                <p>I'm a web developer.</p>
             </article>
             <h1 id="projects">Projects</h1>
             <p>Some of my handywork...</p>
             <br>
-            <section class="projectsGrid">
-                <div class="item">
-                    <a href="https://aronkleinhans.github.io/ccMixedMessages/" target="_blank">
-                        <img class='thumbnail' src="resources/images/mixedm/mixedm_d.png" alt="A link to & screenshot of the random art prompt site">
-                    </a>
-                    <p>Random Art Prompts - 2020</p>
-                </div>
-                <div class="item">
-                    <a href="#" target="_blank">
-                        <img class='thumbnail'src="resources/images/construction.jpg" alt="wip">
-                    </a>
-                    <p>wip</p>
-                </div>
-                <div class="item">
-                    <a href="#" target="_blank">
-                        <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
-                    </a>
-                    <p>wip</p>
-                </div>
-                <div class="item">
-                    <a href="#" target="_blank">
-                        <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
-                    </a>
-                    <p>wip</p>
-                </div>
-                <div class="item">
-                    <a href="#" target="_blank">
-                        <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
-                    </a>
-                    <p>wip</p>
-                </div>
-            </section>
         </main>
+        <section class="projectsGrid">
+            <div class="item">
+                <a href="https://aronkleinhans.github.io/ccMixedMessages/" target="_blank">
+                    <img class='thumbnail' src="resources/images/mixedm/mixedm_d.png" alt="A link to & screenshot of the random art prompt site">
+                </a>
+                <p>Random Art Prompts - 2020</p>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank">
+                    <img class='thumbnail'src="resources/images/construction.jpg" alt="wip">
+                </a>
+                <p>wip</p>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank">
+                    <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
+                </a>
+                <p>wip</p>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank">
+                    <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
+                </a>
+                <p>wip</p>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank">
+                    <img class='thumbnail' src="resources/images/construction.jpg" alt="wip">
+                </a>
+                <p>wip</p>
+            </div>
+        </section>
+        <script src="resources/scripts/darkmode.js"></script>
+        <script src="resources/scripts/dropdown.js"></script>
 </body>
 </html>

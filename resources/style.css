@@ -1,41 +1,41 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 body {
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    color: rgb(105, 105, 105);
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: rgb(41, 41, 41);
 }
-main{
+main {
     width: 100%;
     text-align: center;
 }
 /* nav bar style */
-nav{
+nav {
     z-index: 5;
     position: fixed;
     top: 0;
     width: 100%;
     transition: top 0.5s;
 }
-nav ul{
+nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color:hsla(100, 100%, 0%, 1);
+    background-color:black;
 }
-nav li, .contact li, .about li{
+nav li, .contact li, .about li {
     display: inline-block;
     margin: 5px 20px 5px 20px;
     text-align: center;
     vertical-align: middle;
 }
-nav a, .contact a{
+nav a, .contact a {
     text-decoration: none;
 }
-.button{
+.button {
     padding: 0 25px 0 25px;
     height: auto;
     width: 70px;
@@ -44,10 +44,7 @@ nav a, .contact a{
     font-weight: 700;
     font-family: 'Vollkorn', serif;
 }
-.hl:hover{
-    color: tomato;
-}
-.logo{
+.logo {
     margin-left: 15px;
     background-image: url("./images/logo.png");
     background-repeat: no-repeat;
@@ -58,64 +55,64 @@ nav a, .contact a{
 }
 /* header, text content */
 
-main{
+main {
     background-image: url("./images/topBG.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
-header h1{
+header h1 {
     font-size: 3em;
 }
-.welcome{
+.welcome {
     padding: 150px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
     color: whitesmoke
 }
-.hello{
+.hello {
     margin-top: 100px;
 }
-.contact{
+.contact {
     padding: 100px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
 }
-.contactBG{
+.contactBG {
     background-image: url('./images/contactBG.png');
     background-size: cover;
     background-repeat: repeat;
 }
-.contact img, .about img{
+.contact img, .about img {
     width: 30px;
     height: auto;
 }
-.contact ul{
+.contact ul {
     padding: 0;
 }
-.about{
-    color:  rgb(0, 0, 0);
+.about {
+    color:  black;
     padding: 100px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 1em;
 }
-.aboutBG{
+.aboutBG {
     background-image: url('./images/aboutBG.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.colorHighlight{
+.colorHighlight {
     color: rgb(255, 177, 113);
     font-size: 1.5em;
 }
 
 /* projects grid & items */
 
-.projectsGrid{
+.projectsGrid {
     display: grid;
     margin: 100px;
     grid-template-columns: repeat(3, 1fr);
@@ -126,7 +123,7 @@ header h1{
     justify-content: center;
     align-content: center;
 }
-.item{
+.item {
     color: whitesmoke;
     background-color: rgb(41, 41, 41);
     width: auto;
@@ -134,28 +131,26 @@ header h1{
     perspective: 40px;
     opacity: 80%;
 }
-.item img{
+.item img {
     height: 170px;
     width: auto;
 }
-.item p{
+.item p {
     padding-left: 10px;
 }
 
-/* Darkmode */
+/* a11y mode */
 
+.a11y {
+    color: black !important;
+    background-color: white !important;
+    background-image: none !important;
+}
 
-.dark{
-    color: whitesmoke;
-    background-color: rgb(24, 24, 24);
-}
-.darkitem{
-    background-color: rgb(41, 41, 41);
-}
-.checked{
+.checked {
     filter: opacity(70%);
 }
-#darkmodeBox{
+#darkmodeBox {
     display: none;
 }
 /* dropdown menu */
@@ -198,50 +193,54 @@ header h1{
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
-
 .invert{
     filter: invert(1);
 }
-.dShadow{
-    filter: opacity(50%)
-}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+ 
 /* responsive stuff */
 
-@media only screen and (max-width: 1600px){
-    .welcome{
+@media only screen and (max-width: 1600px) {
+    .welcome {
         font-size: 2em;
         margin-bottom: 800px;
     }
-    .contact{
+    .contact {
         font-size: 1.5em;
     }
 }
-@media only screen and (max-width: 1000px){
-    body{
+@media only screen and (max-width: 1000px) {
+    body {
         font-size: 1.5em;
         font-family: 'Lato', sans-serif;
     }
-    .welcome{
+    .welcome {
         padding: 30px 0 0 0;
         margin-top: 0;
         font-size: 1em;
         text-align: center;
     }
-    nav li{ 
+    nav li { 
         margin: 8px;
     }
-    .button{
+    .button {
         padding: 0 5px 0 5px;
     }
 
-    .item img{
+    .item img {
         height: auto;
         width: 300px;
     }
-    .item p{
+    .item p {
         font-size: 15px;
     }
-    .projectsGrid{
+    .projectsGrid {
         margin: 30px 0 30px 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 200px;
@@ -249,57 +248,55 @@ header h1{
         row-gap: 50px;
         justify-items: center;
     }
-    .contact{
+    .contact {
         padding: 100px;
         margin-bottom: 400px;
         text-align: left;
         font-size: 1em;
     }
 }
-@media only screen and (max-width: 600px){
-    nav a{
+@media only screen and (max-width: 600px) {
+    nav a {
         font-size: 12px;
     }
-    #darkmode{
+    #darkmode {
         font-size: 12px;
     }
-    .welcome{
+    .welcome {
         padding: 30px;
         font-size: 0.7em;
         text-align: left;
     }
-    main{
+    main {
         background-image: url("./images/topBGm.jpeg");
         background-size: contain;
         background-position-x: 0;
     }
-    .contactBG{
+    .contactBG {
         background-image: url('./images/contactBGm.png');
     }
 
-    body{
+    body {
         font-size: 30px;
     }
-    nav li{ 
+    nav li { 
         margin: 8px;
     }
-    .button{
+    .button {
         padding: 0 5px 0 5px;
     }
-
-    .item img{
+    .item img {
         height: auto;
         width: 200px;
     }
-
-    .projectsGrid{
+    .projectsGrid{ 
         margin: 30px 0 30px 0;
         grid-template-columns: minmax(200px, 1fr) minmax(250px, 1fr);
         grid-template-rows: 200px;
         grid-auto-rows: 200px;
         justify-items: center;
     }
-    .contact, .about{
+    .contact, .about {
         padding: 30px;
         margin-bottom: 400px;
         margin-top: 100px;
@@ -307,22 +304,21 @@ header h1{
         font-size: 0.6em;
     }
 }
-@media only screen and (max-width: 450px){
-    body{
+@media only screen and (max-width: 450px) {
+    body {
         font-size: 20px;
     }
-    nav li{ 
+    nav li { 
         margin: 0;
     }
-    .button{
+    .button {
         padding: 0 5px 0 5px;
     }
-
-    .item img{
+    .item img {
         height: auto;
         width: 250px;
     }
-    .projectsGrid{
+    .projectsGrid {
         margin: 30px 0 30px 0;
         grid-template-columns: minmax(150px, 1fr);
         grid-template-rows: 200px;

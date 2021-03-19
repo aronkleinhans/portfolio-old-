@@ -7,6 +7,7 @@
     <meta name="description" content="Designing unique, accessible, responsive, aesthetically pleasing websites.">
     <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="./resources/tooltip.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Aron Kleinhans</title>
@@ -17,29 +18,29 @@
             <ul>
                 <li id="logo" class="logo" aria-roledescription="site logo"></li>
                 <li>
-                    <div class="darkswitch">
+                    <div class="darkswitch tooltip">
                         <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
-                        <label for="darkmodeBox" id="darkmode" class="button hl">
-                            <img src="./resources/images/baseline_dark_mode_white_18dp.png" alt="">
+                        <label for="darkmodeBox" id="darkmode" class="button">
+                            <img id="vis" src="./resources/images/baseline_visibility_off_white_18dp.png" alt="">
                         </label>
+                        <span class="tooltiptext noSelect">Visuals on/off</span>
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
+                    <div class="dropdown menuTip">
                         <img onclick="myFunction()" class="menuIcon noSelect dropbtn" src="resources/images/baseline_menu_white_18dp.png" alt="">
                         <div id="myDropdown" class="dropdown-content">
                             <a href="./index.html"><span class="button">Projects</span></a>
                             <a href="./about.html"><span class="button">About me</span></a>
                             <a href="./contact.html"><span class="button">Contact</span></a>
                         </div>
+                            <span class="tooltiptext noSelect">Menu</span>
                     </div>
                 </li>
             </ul>
         </nav>
-        <script src="./resources/scripts/darkmode.js"></script>
-        <script src="./resources/scripts/dropdown.js"></script>
     </header>
-    <div class="about">
+    <div class="about a11yable">
         <h1>I started learning web development in 2020...blah-blah</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse. Egestas sed tempus urna et pharetra pharetra massa. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Tristique risus nec feugiat in. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Purus non enim praesent elementum facilisis leo vel. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Id neque aliquam vestibulum morbi. Magna fringilla urna porttitor rhoncus dolor. Sit amet purus gravida quis blandit turpis. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Eget egestas purus viverra accumsan in nisl nisi. Etiam sit amet nisl purus in mollis nunc sed. Aliquam vestibulum morbi blandit cursus risus at. Risus nec feugiat in fermentum posuere. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Porttitor lacus luctus accumsan tortor posuere ac. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Non enim praesent elementum facilisis leo.
 
@@ -47,12 +48,14 @@
         </p>
             <h2>Skills:</h2>
         <ul>
-            <li><img class="invert" src="./resources/images/langIcons/html-5.png" alt=""></li>
-            <li><img class="invert" src="./resources/images/langIcons/css3.png" alt=""></li>
-            <li><img class="invert" src="./resources/images/langIcons/javascript.png" alt=""></li>
-            <li><img class="invert" src="./resources/images/langIcons/git.png" alt=""></li>
-            <li><img class="invert" src="./resources/images/langIcons/github.png" alt=""></li>
+            <li><img class="icon invert" src="./resources/images/langIcons/html-5.png" alt=""></li>
+            <li><img class="icon invert" src="./resources/images/langIcons/css3.png" alt=""></li>
+            <li><img class="icon invert" src="./resources/images/langIcons/javascript.png" alt=""></li>
+            <li><img class="icon invert" src="./resources/images/langIcons/git.png" alt=""></li>
+            <li><img class="icon invert" src="./resources/images/langIcons/github.png" alt=""></li>
         </ul>
     </div>
+    <script src="./resources/scripts/darkmode.js"></script>
+    <script src="./resources/scripts/dropdown.js"></script>
 </body>
 </html>
