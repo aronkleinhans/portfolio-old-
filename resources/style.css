@@ -14,8 +14,8 @@ nav{
     z-index: 5;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    transition: top 0.5s;
 }
 nav ul{
     padding: 0;
