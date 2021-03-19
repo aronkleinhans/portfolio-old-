@@ -81,7 +81,7 @@ header h1{
 .contactBG{
     background-image: url('./images/contactBG.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .colorHighlight{
