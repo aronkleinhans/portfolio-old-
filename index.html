@@ -17,16 +17,22 @@
             <nav>
                 <ul>
                     <li class="logo" aria-roledescription="site logo"></li>
-                    <li><a href="#projects"><span class="button">Projects</span></a></li>
-                    <li><a href="#"><span class="button">About me</span></a></li>
-                    <li><a href="./contact.html"><span class="button">Contact</span></a></li>
                     <li>
-                        <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
-                        <label for="darkmodeBox" id="darkmode" class="button">Dark Theme</label>
+                        <img class="menuIcon" src="resources/images/baseline_menu_black_18dp.png" alt="">
                     </li>
-                   </ul>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#projects"><span class="button">Projects</span></a>
+                            <a href="#"><span class="button">About me</span></a>
+                            <a href="./contact.html"><span class="button">Contact</span></a>
+        
+                            <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
+                            <label for="darkmodeBox" id="darkmode" class="button">Dark Theme</label>
+                        </div>
+                    </li>
+                </ul>
             </nav>
-            <script src="resources/main.js"></script>
+            <script src="resources/scripts/darkmode.js"></script>
         </header>
         <main>
             <article class="welcome">

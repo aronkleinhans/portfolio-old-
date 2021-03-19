@@ -124,7 +124,11 @@ header h1{
 #darkmodeBox{
     display: none;
 }
+/* dropdown menu */
 
+.menuIcon{
+    filter: invert(1);
+}
 
 /* responsive stuff */
 
