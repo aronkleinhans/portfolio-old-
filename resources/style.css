@@ -11,6 +11,7 @@ main{
 }
 /* nav bar style */
 nav{
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -34,12 +35,12 @@ nav a, .contact a{
     padding: 0 25px 0 25px;
     height: auto;
     width: 70px;
-
+    font-size: 0.8em;
     color: whitesmoke;
     font-weight: 700;
     font-family: 'Vollkorn', serif;
 }
-.button:hover{
+.hl:hover{
     color: tomato;
 }
 .logo{
@@ -66,6 +67,9 @@ header h1{
     text-align: left;
     font-size: 2em;
     color: whitesmoke
+}
+.hello{
+    margin-top: 100px;
 }
 .contact{
     padding: 100px;
@@ -119,17 +123,65 @@ header h1{
     background-color: rgb(41, 41, 41);
 }
 .checked{
-    filter: drop-shadow(0 0 0.75rem rgb(106, 213, 255));
+    filter: drop-shadow(0 0 1rem rgb(106, 213, 255));
 }
 #darkmodeBox{
     display: none;
 }
 /* dropdown menu */
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(41, 41, 41);
+    opacity: 80%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #474747;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(41, 41, 41);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(77, 77, 77)}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
-.menuIcon{
+
+.invert{
     filter: invert(1);
 }
-
+.dShadow{
+    filter: drop-shadow(5px 5px 20px red);
+}
 /* responsive stuff */
 
 @media only screen and (max-width: 1500px){
@@ -155,9 +207,7 @@ header h1{
     .button{
         padding: 0 5px 0 5px;
     }
-    .logo{
-        margin: 0;
-    }
+
     .item img{
         height: auto;
         width: 300px;
@@ -202,10 +252,7 @@ header h1{
     .button{
         padding: 0 5px 0 5px;
     }
-    .logo{
-        width: 30px;
-        height: 30px;
-    }
+
     .item img{
         height: auto;
         width: 200px;
@@ -235,10 +282,7 @@ header h1{
     .button{
         padding: 0 5px 0 5px;
     }
-    .logo{
-        width: 30px;
-        height: 30px;
-    }
+
     .item img{
         height: auto;
         width: 250px;

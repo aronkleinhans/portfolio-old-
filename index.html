@@ -12,31 +12,36 @@
     <title>Aron Kleinhans</title>
 </head>
 <body>
-
     <header>
             <nav>
                 <ul>
-                    <li class="logo" aria-roledescription="site logo"></li>
+                    <li id="logo" class="logo" aria-roledescription="site logo"></li>
                     <li>
-                        <img class="menuIcon" src="resources/images/baseline_menu_black_18dp.png" alt="">
+                        <div class="darkswitch">
+                            <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
+                            <label for="darkmodeBox" id="darkmode" class="button hl">
+                                <img src="./resources/images/baseline_dark_mode_white_18dp.png" alt="">
+                            </label>
+                        </div>
                     </li>
                     <li>
                         <div class="dropdown">
-                            <a href="#projects"><span class="button">Projects</span></a>
-                            <a href="#"><span class="button">About me</span></a>
-                            <a href="./contact.html"><span class="button">Contact</span></a>
-        
-                            <input type="checkbox" name="darkmodeSwitch" id="darkmodeBox">
-                            <label for="darkmodeBox" id="darkmode" class="button">Dark Theme</label>
+                            <img onclick="myFunction()" class="menuIcon noSelect dropbtn" src="resources/images/baseline_menu_white_18dp.png" alt="">
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#projects"><span class="button">Projects</span></a>
+                                <a href="#"><span class="button">About me</span></a>
+                                <a href="./contact.html"><span class="button">Contact</span></a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </nav>
             <script src="resources/scripts/darkmode.js"></script>
+            <script src="resources/scripts/dropdown.js"></script>
         </header>
         <main>
             <article class="welcome">
-               <p>Hello, I'm <span class="colorHighlight">Aron Kleinhans</span>.</p>
+               <p class="hello" >Hello, I'm <span class="colorHighlight">Aron Kleinhans</span>.</p>
                <p>I'm a web developer.</p>
             </article>
             <h1>Projects</h1>

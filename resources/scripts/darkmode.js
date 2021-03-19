@@ -2,12 +2,14 @@
 let checkbox = document.getElementById('darkmodeBox');
 let label = document.getElementById('darkmode');
 let items = document.getElementsByClassName('item');
-let buttonText = document.getElementById('darkmode');
+let button = document.getElementById('darkmode');
+let logo = document.getElementById('logo');
 
 if(localStorage.getItem('dark')) {
      document.body.classList.add('dark');
      label.classList.add('checked');
-     buttonText.innerText = 'Light Theme';
+     button.classList.add('dShadow');
+     logo.classList.add('invert');
 };
 
 window.onload = switchDarkmode();
@@ -18,12 +20,14 @@ function switchDarkmode(){
           if(this.checked) {
                document.body.classList.add('dark');
                label.classList.add('checked');
-               buttonText.innerHTML = 'Light Theme';
+               button.classList.add('dShadow');
+               logo.classList.add('invert');
           } else {
                document.body.classList.remove('dark');
                label.classList.remove('checked');
                localStorage.removeItem('dark');
-               buttonText.innerHTML = 'Dark Theme';
+               button.classList.remove('dShadow');
+               logo.classList.remove('invert');
           };
      });
 };
