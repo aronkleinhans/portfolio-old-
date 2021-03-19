@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: rgb(105, 105, 105);
     background-color: whitesmoke;
 }
 main{
@@ -77,6 +77,11 @@ header h1{
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
+}
+.contactBG{
+    background-image: url('./images/contactBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .colorHighlight{
