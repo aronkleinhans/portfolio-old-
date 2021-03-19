@@ -153,6 +153,9 @@ header h1 {
 #darkmodeBox {
     display: none;
 }
+#vis{
+    margin-top: 5px;
+}
 /* dropdown menu */
 /* Dropdown Button */
 .dropbtn {
