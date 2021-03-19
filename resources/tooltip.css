@@ -1,6 +1,7 @@
  
    /* Tooltip text */
    .tooltip .tooltiptext {
+    font-size: 14px;
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -38,10 +39,11 @@
     visibility: visible;
     opacity: 1;
   }
-
+  /* menu "tooltip" */
   .menuTip .tooltiptext {
+      font-size: 14px;
     visibility: hidden;
-    width: 120px;
+    width: 50px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -51,8 +53,8 @@
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 90px;
+    top: 4px;
+    left: 100px;
     margin-left: -60px;
   
     /* Fade in tooltip */
