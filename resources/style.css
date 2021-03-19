@@ -207,10 +207,13 @@ header h1{
 }
 /* responsive stuff */
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1600px){
     .welcome{
         font-size: 2em;
         margin-bottom: 800px;
+    }
+    .contact{
+        font-size: 1.5em;
     }
 }
 @media only screen and (max-width: 1000px){
