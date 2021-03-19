@@ -124,7 +124,7 @@ header h1{
     background-color: rgb(41, 41, 41);
 }
 .checked{
-    filter: drop-shadow(0 0 1rem rgb(106, 213, 255));
+    filter: opacity(70%);
 }
 #darkmodeBox{
     display: none;
@@ -174,7 +174,7 @@ header h1{
     filter: invert(1);
 }
 .dShadow{
-    filter: drop-shadow(5px 5px 20px red);
+    filter: opacity(50%)
 }
 /* responsive stuff */
 
