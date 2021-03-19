@@ -5,6 +5,7 @@ let items = document.getElementsByClassName('item');
 let button = document.getElementById('darkmode');
 let logo = document.getElementById('logo');
 
+
 if(localStorage.getItem('dark')) {
      document.body.classList.add('dark');
      label.classList.add('checked');

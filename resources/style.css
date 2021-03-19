@@ -23,7 +23,7 @@ nav ul{
     list-style-type: none;
     background-color:hsla(100, 100%, 0%, 1);
 }
-nav li{
+nav li, .contact li{
     display: inline-block;
     margin: 5px 20px 5px 20px;
     text-align: center;
@@ -79,9 +79,16 @@ header h1{
     font-size: 2em;
 }
 .contactBG{
-    background-image: url('./images/contactBG.jpg');
+    background-image: url('./images/contactBG.png');
     background-size: cover;
     background-repeat: repeat;
+}
+.contact img{
+    width: 30px;
+    height: auto;
+}
+.contact ul{
+    padding: 0;
 }
 
 .colorHighlight{
