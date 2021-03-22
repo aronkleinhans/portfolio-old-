@@ -1,5 +1,8 @@
- 
-   /* Tooltip text */
+/*nest the target element in a div with class = "tooltip"*/
+/*at the bottom of this div add a span with class*/
+/* = "tooltiptext", this contains the text*/
+
+/* Tooltip text */
    .tooltip .tooltiptext {
     font-size: 14px;
     visibility: hidden;
