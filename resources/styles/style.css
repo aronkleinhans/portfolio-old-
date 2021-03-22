@@ -32,7 +32,7 @@ nav li, .contact li, .about li {
     text-align: center;
     vertical-align: middle;
 }
-nav a, .contact a {
+nav a {
     text-decoration: none;
 }
 .button {
@@ -46,7 +46,7 @@ nav a, .contact a {
 }
 .logo {
     margin-left: 15px;
-    background-image: url("./images/logo.png");
+    background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 50px;
@@ -56,7 +56,7 @@ nav a, .contact a {
 /* header, text content */
 
 main {
-    background-image: url("./images/topBG.png");
+    background-image: url("../images/topBG.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -80,26 +80,27 @@ header h1 {
     font-size: 2em;
 }
 .contactBG {
-    background-image: url('./images/contactBG.png');
+    background-image: url('../images/contactBG.png');
     background-size: cover;
     background-repeat: repeat;
 }
 .contact img, .about img {
-    width: 30px;
+    margin-top: 50px;
+    width: 50px;
     height: auto;
 }
 .contact ul {
     padding: 0;
 }
 .about {
-    color:  black;
+    color:  whitesmoke;
     padding: 100px;
     margin-bottom: 600px;
     text-align: left;
     font-size: 1em;
 }
 .aboutBG {
-    background-image: url('./images/aboutBG.jpg');
+    background-image: url('../images/aboutBG.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,57 +157,9 @@ header h1 {
 #vis{
     margin-top: 5px;
 }
-/* dropdown menu */
-/* Dropdown Button */
-.dropbtn {
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    z-index: 6;
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:hsla(100, 100%, 0%, 1);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: rgb(77, 77, 77)}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
 .invert{
     filter: invert(1);
 }
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
- 
 /* responsive stuff */
 
 @media only screen and (max-width: 1600px) {
@@ -271,12 +224,12 @@ header h1 {
         text-align: left;
     }
     main {
-        background-image: url("./images/topBGm.jpeg");
+        background-image: url("../images/topBGm.jpeg");
         background-size: contain;
         background-position-x: 0;
     }
     .contactBG {
-        background-image: url('./images/contactBGm.png');
+        background-image: url('../images/contactBGm.png');
     }
 
     body {
