@@ -98,6 +98,7 @@ header h1 {
     margin-bottom: 600px;
     text-align: left;
     font-size: 1em;
+    width: 50%;
 }
 .aboutBG {
     background-image: url('../images/aboutBG.jpg');
