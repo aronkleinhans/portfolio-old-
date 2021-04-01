@@ -96,9 +96,11 @@ header h1 {
     color:  whitesmoke;
     padding: 100px;
     margin-bottom: 600px;
+    margin-left: 18%;
     text-align: left;
     font-size: 1em;
     width: 50%;
+    text
 }
 .aboutBG {
     background-image: url('../images/aboutBG.jpg');
