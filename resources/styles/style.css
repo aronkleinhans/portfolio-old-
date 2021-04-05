@@ -21,7 +21,7 @@ nav {
     transition: top 0.5s;
 }
 nav ul {
-    padding: 0;
+    padding-left: 6%;
     margin: 0;
     list-style-type: none;
     background-color:black;
@@ -64,7 +64,7 @@ header h1 {
     font-size: 3em;
 }
 .welcome {
-    padding: 150px;
+    padding: 8%;
     margin-bottom: 600px;
     text-align: left;
     font-size: 2em;
@@ -265,6 +265,9 @@ header h1 {
 @media only screen and (max-width: 450px) {
     body {
         font-size: 20px;
+    }
+    nav ul {
+        padding-left: 0;
     }
     nav li { 
         margin: 0;
