@@ -144,15 +144,12 @@ header h1 {
     color: whitesmoke;
     background-color: rgb(41, 41, 41);
     width: 300px;
-    height: 180px;
+    height: 230px;
     text-align: left;
     perspective: 40px;
     opacity: 80%;
 }
-.item img {
-    height: 170px;
-    width: auto;
-}
+
 .item p {
     padding-left: 10px;
 }
