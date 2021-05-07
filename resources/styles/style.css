@@ -203,9 +203,9 @@ header h1 {
         padding: 0 5px 0 5px;
     }
 
-    .item img {
-        height: auto;
-        width: 300px;
+    .item {
+        height: 180px;
+        width: 250px;
     }
     .item p {
         font-size: 15px;
@@ -255,8 +255,8 @@ header h1 {
     .button {
         padding: 0 5px 0 5px;
     }
-    .item img {
-        height: auto;
+    .item {
+        height: 130px;
         width: 200px;
     }
     .projectsGrid{ 
@@ -287,9 +287,9 @@ header h1 {
     .button {
         padding: 0 5px 0 5px;
     }
-    .item img {
-        height: auto;
-        width: 250px;
+    .item {
+        height: 80px;
+        width: 150px;
     }
     .projectsGrid {
         margin: 30px 0 30px 0;
