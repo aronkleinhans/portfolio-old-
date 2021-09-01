@@ -1,11 +1,12 @@
 # portfolio page / codecademy project
 
-This is a codecademy milestone project. (also my first portfolio page :D)
+This is my portfolio! Enjoy!
 
 ## Tech used:
 
 * HTML
 * CSS
 * JS
+* Python
 
 ### Author: Aron Kleinhans
