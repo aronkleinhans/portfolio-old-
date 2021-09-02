@@ -1,6 +1,4 @@
-# portfolio page / codecademy project
-
-This is my portfolio! Enjoy!
+# Welcome to my portfolio!
 
 ## Tech used:
 
