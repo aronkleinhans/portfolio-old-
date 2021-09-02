@@ -1,9 +1,6 @@
-import fetch from "node-fetch";
-
 class ProjectApi {
     static async getProjects () {
-        let srv = "aronkleinhans.pythonanywhere.com/projects";
-
+        let srv = `aronkleinhans.pythonanywhere.com/projects`;
         try{
             let response = await fetch(srv);
             if(response.status != 200) {

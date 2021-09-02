@@ -1,10 +1,10 @@
 # Welcome to my portfolio!
 
-## Tech used:
+## Technologies used:
 
 * HTML
 * CSS
 * JS
-* Python
+* Python 3.9 & Flask 2.0
 
 ### Author: Aron Kleinhans
