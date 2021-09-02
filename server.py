@@ -1,7 +1,9 @@
-# hosted separately at pythonanywhere.com
-
+"""  hosted separately at pythonanywhere.com
+     A simple flask app service that grabs all your github repos with the api 
+     and returns an object """
 from flask import Flask
 from flask_cors import CORS
+# config.py is where you store your USERNAME and access TOKEN for security
 from config import *
 import requests
 
@@ -13,16 +15,19 @@ if __name__ == "__main__":
 
 @app.route("/projects", methods = ["GET"])
 def getProjects():
+    # add simple exception handling so our flask app doesn't terminate upon an error
     try:
-        url = "https://api.github.com/users/aronkleinhans/repos"
+        url = "https://api.github.com/users/" + USERNAME + "/repos"
         headers = {"Accept":"application/vnd.github.inertia-preview+json"}
         repos = requests.get(url, headers=headers, auth=(USERNAME, TOKEN)).json()
         projects = []
         for repo in repos:
+            #check for and exclude github.io repo and github config repo from the list
             if repo["name"] == USERNAME:
                 continue
             elif repo["name"] == USERNAME + ".github.io":
                 continue
+            # otherwise populate the list
             else:
                 project = {
                     "id": repo["id"],
