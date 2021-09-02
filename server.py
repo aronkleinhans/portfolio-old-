@@ -21,7 +21,9 @@ def getProjects():
         for repo in repos:
             if repo["name"] == USERNAME:
                 continue
-            elif repo["homepage"]:
+            elif repo["name"] == USERNAME + ".github.io":
+                continue
+            else:
                 project = {
                     "id": repo["id"],
                     "name": repo["name"],
