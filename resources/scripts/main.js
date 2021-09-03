@@ -1,5 +1,5 @@
 import ProjectApi from "./getRepos.js";
 
-const data = ProjectApi.getProjects;
+const data = ProjectApi.getProjects();
 
 console.log(data)
