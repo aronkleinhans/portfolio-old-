@@ -1,13 +1,10 @@
 import ProjectApi from "./getRepos.js";
 
-const data = ProjectApi.getProjects();
+const data = ProjectApi.getProjects;
 
 let tag = document.createElement("p");
 
-console.log(data);
-console.log(data());
-
-for(item in data) {
+for(item in data()) {
     tag.innerText += "/n" + item;
 }
 
