@@ -7,7 +7,7 @@ let tag = document.createElement("p");
 console.log(data);
 console.log(data());
 
-for(item of data) {
+for(item in data) {
     tag.innerText += "/n" + item;
 }
 
