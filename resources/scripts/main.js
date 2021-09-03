@@ -1,6 +1,6 @@
 import ProjectApi from "./getRepos.js";
 
-const data = ProjectApi.getProjects();
+const data = ProjectApi.getProjects;
 let tag = document.createElement("p");
 
 tag.appendChild(data());
