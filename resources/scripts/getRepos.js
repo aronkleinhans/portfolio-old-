@@ -1,8 +1,7 @@
 class ProjectApi {
     static async getProjects () {
-        let srv = "http://aronkleinhans.pythonanywhere.com/projects";
         try{
-            let response = await fetch(srv);
+            let response = await fetch("http://aronkleinhans.pythonanywhere.com/projects");
             if(response.status != 200) {
                 throw Error("Failed to get projects.")
             }
