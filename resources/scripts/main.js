@@ -8,5 +8,8 @@ let projects = "";
 for(item in data()) {
     projects += "\n" + item;
 };
+console.log(data());
+console.log(projects);
+
 tag.innerText = projects;
 element.appendChild(tag);
