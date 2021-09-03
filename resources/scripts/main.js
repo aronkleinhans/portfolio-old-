@@ -5,6 +5,6 @@ let tag = document.createElement("p");
 
 tag.innerText = data();
 
-let element = document.getElementsByTagName("body");
+let element = document.getElementById("test")
 
 element.appendChild(tag);
