@@ -1,8 +1,6 @@
-# portfolio page / codecademy project
+# portfolio page
 
-This is a codecademy milestone project. (also my first portfolio page :D)
-
-## Tech used:
+## Technologies used:
 
 * HTML
 * CSS
