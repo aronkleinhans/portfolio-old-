@@ -4,9 +4,8 @@ const data = ProjectApi.getProjects;
 let element = document.getElementById("test");
 let tag = document.createElement("p");
 
-console.log(data())
-console.log(data().projects)
-console.log(data().projects[0])
+console.log(data().blob.text)
+
 
 
 tag.innerText = `I'm your p tag and i got : ${data().projects[0]}`;
