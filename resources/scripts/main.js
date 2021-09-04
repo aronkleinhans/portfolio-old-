@@ -1,12 +1,14 @@
 import ProjectApi from "./getRepos.js";
 
+let projects = [];
+
 async function test() {
-    let response = await ProjectApi.getProjects();
-    let json = await response.json();  
-    return json;
+    let data = await ProjectApi.getProjects();
+    console.log(data)
+    return data;
 }
 
     
 
-console.log(test)
+console.log(test())
 
