@@ -4,8 +4,9 @@ let data;
 
 async function getResult () {
     data = await ProjectApi.getProjects();
+    return data;
 }
     
 
-console.log(data)
+console.log(getResult())
 
