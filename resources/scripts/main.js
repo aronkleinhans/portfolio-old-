@@ -1,14 +1,10 @@
 import ProjectApi from "./getRepos.js";
 
-let projects = [];
+const projects = document.getElementById('projects')
 
-async function test() {
-    let data = await ProjectApi.getProjects();
-    console.log(data)
-    return data;
+async function renderProjects() {
+    const data = await ProjectApi.getProjects();
+    projects.textContent = data;
 }
 
-    
-
-console.log(test())
-
+renderProjects();
