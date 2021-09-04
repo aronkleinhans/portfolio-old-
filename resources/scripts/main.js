@@ -4,7 +4,7 @@ let data;
 
 async function getResult () {
     data = await ProjectApi.getProjects();
-    return data;
+    return data.json();
 }
     
 
