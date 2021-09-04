@@ -1,6 +1,8 @@
 import ProjectApi from "./getRepos.js";
 
-const data = ProjectApi.getProjects;
+const data = ProjectApi.getProjects().then(result  => {
+    return result;
+});
 
-console.log(data().blob().text)
+console.log(data)
 
