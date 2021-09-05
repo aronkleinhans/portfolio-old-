@@ -8,16 +8,16 @@ html {
     color: rgb(255, 223, 137);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .headline {
     color: rgb(179, 53, 95);
-    font-size: 76px;
+    font-size: 50px;
 }
 
 .title {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .text {
