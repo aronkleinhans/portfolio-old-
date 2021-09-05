@@ -4,7 +4,7 @@
 
 from flask import Flask
 from flask_cors import CORS
-# config.py is where you store your USERNAME and personal access TOKEN for security
+# config is where you store your USERNAME and personal access TOKEN for security
 from config import *
 import requests
 
