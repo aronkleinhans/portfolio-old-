@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/styles/style.css">
     <title>Aron Kleinhans</title>
-    
+    <link rel="stylesheet" href="resources/styles/style.css">
 </head>
 <body>
+    <header>
+        <a href="#top"><img class="logo" src="resources/images/logo.png" alt="site logo"></a>
+        <a href="#projects"><p class="sText">Projects</p></a>
+        <a href="#skills"><p class="sText">Skills</p></a>
+    </header>
     <main>
-        <p class="headline">Welcome</p>
-        <p class="title">My name is Aron Kleinhans</p>
-        <p class="text">I'm a web developer</p>
+        <p class="sText">Welcome, my name is <span class="headline">Aron Kleinhans</span></p>
+        <p class="bText">I'm a web developer</p>
+        <p>Take a look around and if you find something fancy don't hesitate to <a class="sText contact" href="mailto:kleinhans.aron@outlook.com">contact me!</a></p>
     </main>
     <div class="sidebar">
 
     </div>
     <div class="projects" id="projects">
-
+        <h1 class="bText">Projects <span class="tText">(click titles to open in github)</span> </h1>
     </div>
-    <div class="skills">
-
+    <div class="skills" id="skills">
+        <h1 class="bText">Skills</h1>
     </div>
-    <div class="popup" id="contact_popup">
-        <p>You're welcome to contact me via email: <a href="mailto:kleinhans.aron@outlook.com"><img src="#" alt=""> envelope/mail icon helre</a></p>     
-    </div>
-    <div id="test"></div>
     <script type="module" src="resources/scripts/main.js"></script>
 </body>
 </html>
