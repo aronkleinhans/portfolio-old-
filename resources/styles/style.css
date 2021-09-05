@@ -3,3 +3,23 @@
     padding : 0;
     display: block;
 }
+html {
+    background-color: rgb(85, 74, 57);
+    color: rgb(255, 236, 182);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.headline {
+    color: rgb(180, 60, 150);
+    font-size: 76px;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.text {
+    color: whitesmoke;
+}
