@@ -59,8 +59,9 @@ main {
 }
 
 .item {
-    padding: 10px 30px 10px 30px;
-    width: 700px;
+    margin-left: 22rem;
+    padding: 30px;
+    width: 600px;
 }
 .itemImage {
     width: 600px;
