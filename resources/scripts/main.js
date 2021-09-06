@@ -5,7 +5,7 @@ let divs = [];
 
 async function renderProjects() {
     const data = await ProjectApi.getProjects();
-    console.log(data)
+
     for(let i = 0; i <= data.projects.length-1; i++) {
     let addDiv = document.createElement("div");
     let addImg = document.createElement("img");
@@ -28,8 +28,8 @@ async function renderProjects() {
     projects.appendChild(addDiv);
 
     addName.textContent = data.projects[i].name;
-    addName.classList += "sText";
-    
+    addName.classList += "sText links";
+
     addGHLink.href = data.projects[i].url;
     addGHLink.target = "_blank";
 
