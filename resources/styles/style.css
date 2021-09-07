@@ -1,17 +1,18 @@
 * {
     margin: 0;
     padding : 0;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     scroll-behavior: smooth;
 }
 
 header {
     position: fixed;
-    top: 18;
+    top: 18rem;
     left: 4rem;
-    padding-right: 20px;
+    padding-right: 1.5rem;
     border-right: solid 4px rgb(226, 207, 155);
+    width: 7rem;
 }
 
 body {
@@ -20,12 +21,12 @@ body {
     background-color: rgb(54, 51, 43);
     color: rgb(151, 148, 148);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .logo {
     margin-top: 5rem;
-    height: 80px;
+    height: 7rem;
 }
 
 main {
@@ -33,23 +34,29 @@ main {
 }
 
 .links {
-    border-bottom: dotted 2px rgb(226, 207, 155);
+    border-bottom: dotted 0.125rem rgb(226, 207, 155);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.links:hover {
+    color: rgb(170, 59, 133);
+    border-bottom: dotted 0.125rem rgb(170, 59, 133);
 }
 
 .headline {
     color: rgb(170, 59, 133);
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
 .bText {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: rgb(226, 207, 155);
 }
 
 .sText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(226, 207, 155);
 }
@@ -59,19 +66,53 @@ main {
 }
 
 .item {
-    margin-left: 18rem;
-    padding: 30px 100px 30px 100px;
-    width: 800px;
+    padding: 2rem;
+    width: 30rem;
 }
 .itemImage {
-    width: 600px;
+    width: 30rem;
+}
+
+.project-container {
+    margin-top: 30rem;
 }
 
 .projects {
     display: grid;
-    margin-top: 30rem;
     align-content: center;
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+    * {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    * {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    * {
+        font-size: 10px;
+    }
+    body {
+        margin: 0 3rem 0 3rem;
+    }
+    header {
+        position: unset;
+        border: none;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .item {
+        width: 20rem;
+    }
+    .itemImage {
+        width: 20rem;
+    }
 }
