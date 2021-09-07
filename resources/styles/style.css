@@ -16,7 +16,7 @@ header {
 
 body {
     display: block;
-    margin: 0 25rem 0 14rem;
+    margin: 0 14rem 0 14rem;
     background-color: rgb(54, 51, 43);
     color: rgb(151, 148, 148);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,15 +59,19 @@ main {
 }
 
 .item {
-    margin-left: 22rem;
-    padding: 30px;
-    width: 600px;
+    margin-left: 18rem;
+    padding: 30px 100px 30px 100px;
+    width: 800px;
 }
 .itemImage {
     width: 600px;
 }
 
 .projects {
+    display: grid;
     margin-top: 30rem;
-
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
