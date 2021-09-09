@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
+
 * {
     margin: 0;
     padding : 0;
     font-size: 18px;
     text-decoration: none;
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -47,12 +50,14 @@ main {
     color: rgb(170, 59, 133);
     font-size: 5rem;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bText {
     font-size: 3rem;
     font-weight: bold;
     color: rgb(226, 207, 155);
+    font-family: 'Roboto', sans-serif;
 }
 
 .sText {
@@ -63,6 +68,7 @@ main {
 
 .tText {
     font-size: .75rem;
+
 }
 
 .item {
