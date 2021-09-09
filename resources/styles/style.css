@@ -21,7 +21,7 @@ header {
 body {
     display: block;
     margin: 0 14rem 0 14rem;
-    background-color: rgb(54, 51, 43);
+    background-color: rgb(32, 32, 32);
     color: rgb(151, 148, 148);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
@@ -89,6 +89,26 @@ main {
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+
+.skills {
+    margin-top: 5rem;
+}
+
+.skills ul {
+    list-style-type: none;
+    width: 40rem;
+    margin: 5rem  0 0 0;
+}
+
+.skills li{
+    display: inline;
+    width: fit-content;
+    margin: .5rem;
+}
+
+.icon {
+    filter: invert(1);
 }
 
 @media only screen and (max-width: 1500px) {
