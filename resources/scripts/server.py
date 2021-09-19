@@ -28,6 +28,8 @@ def getProjects():
                 continue
             elif repo["name"] == USERNAME + ".github.io":
                 continue
+            elif repo["name"][0] == "-":
+                continue
             # otherwise populate the list
             else:
                 project = {
