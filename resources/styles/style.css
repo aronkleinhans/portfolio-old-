@@ -114,6 +114,18 @@ main {
     filter: invert(1);
 }
 
+.features {
+    margin: 15rem 0 15rem 0;
+}
+
+.features li {
+    margin-top: 2rem;
+}
+
+.features li h2 {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 1500px) {
     * {
         font-size: 14px;
