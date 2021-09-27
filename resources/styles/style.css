@@ -21,7 +21,7 @@ header {
 body {
     display: block;
     margin: 0 14rem 0 14rem;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(54, 54, 54);
     color: rgb(151, 148, 148);
     font-size: 1.5rem;
 }
@@ -107,11 +107,14 @@ main {
 .skills li{
     display: inline;
     width: fit-content;
-    margin: .5rem;
 }
 
 .icon {
     filter: invert(1);
+    margin: .5rem ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255),
+        -2px -2px 5px rgb(100 , 100, 100);
 }
 
 .features {
