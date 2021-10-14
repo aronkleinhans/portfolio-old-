@@ -23,7 +23,7 @@ async function renderProjects() {
 
         addHomepage.appendChild(addImg);
         addGHLink.appendChild(addName);
-        addDiv.appendChild(addImg);
+        addDiv.appendChild(addHomepage);
         addDiv.appendChild(addGHLink);
         addDiv.appendChild(addP);
         projects.appendChild(addDiv);
