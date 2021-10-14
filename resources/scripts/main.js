@@ -21,7 +21,7 @@ async function renderProjects() {
             addDiv.style = "border-right: solid 5px rgb(170, 59, 133); border-bottom: solid 5px rgb(170, 59, 133);"
         }
 
-        addImg.appendChild(addHomepage);
+        addHomepage.appendChild(addImg);
         addGHLink.appendChild(addName);
         addDiv.appendChild(addImg);
         addDiv.appendChild(addGHLink);
