@@ -31,7 +31,7 @@ async function renderProjects() {
         addName.textContent = data.projects[i].name;
         addName.classList += "sText links";
 
-        addHomepage.href = "aronkleinhans.github.io/" + data.projects[i].name;
+        addHomepage.href = "https://aronkleinhans.github.io/" + data.projects[i].name;
         addHomepage.target = "_blank";
 
         addGHLink.href = data.projects[i].url;
