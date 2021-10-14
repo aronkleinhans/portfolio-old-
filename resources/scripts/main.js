@@ -12,6 +12,7 @@ async function renderProjects() {
         let addP = document.createElement("p");
         let addName = document.createElement("p");
         let addGHLink = document.createElement("a");
+        let addHomepage = document.createElement("a");
 
         if(i % 2 === 0) {
             addDiv.style = "border-left: solid 5px rgb(170, 59, 133); border-bottom: solid 5px rgb(170, 59, 133);"
@@ -20,7 +21,7 @@ async function renderProjects() {
             addDiv.style = "border-right: solid 5px rgb(170, 59, 133); border-bottom: solid 5px rgb(170, 59, 133);"
         }
 
-
+        addImg.appendChild(addHomepage);
         addGHLink.appendChild(addName);
         addDiv.appendChild(addImg);
         addDiv.appendChild(addGHLink);
@@ -29,6 +30,9 @@ async function renderProjects() {
 
         addName.textContent = data.projects[i].name;
         addName.classList += "sText links";
+
+        addHomepage.href = "aronkleinhans.github.io/" + data.projects[i].name;
+        addHomepage.target = "_blank";
 
         addGHLink.href = data.projects[i].url;
         addGHLink.target = "_blank";
